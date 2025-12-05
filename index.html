@@ -1,0 +1,284 @@
+<html>
+  <head>
+    <title>Odessa City</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.5/build/css/intlTelInput.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.5/build/js/intlTelInput.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Welcome to Odessa</h1>
+    <p>
+      Odessa is a port city on the Black Sea in southern Ukraine. It is known
+      for its beautiful beaches, vibrant culture, and rich history.
+    </p>
+    <form method="POST" class="tech-form">
+      <div class="float-form">
+        <button type="button" class="float-form-consultation">
+          <span>Консультація</span>
+          <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22C17.5228 22 22 17.5228 22 12C22 10.1786 21.513 8.47087 20.6622 7"
+              stroke="#ffffff"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 12H8.009M11.991 12H12M15.991 12H16"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="float-form-form">
+          <div class="logo-wrapper">
+            <a href="/" class="logo">
+              <img
+                src="https://cdn.prod.website-files.com/68b009efc3d8a769c78931fe/68bc5b38b717b4abde96b205_Group%205.svg"
+                loading="lazy"
+                alt="Odesa city"
+                width="124px"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <input type="hidden" name="type" value="lead" />
+          <input type="hidden" name="projectId" value="" />
+          <input type="hidden" name="projectNameUk" value="" />
+          <input type="hidden" name="projectAddressUk" value="" />
+          <input type="hidden" name="message" value="" />
+          <input type="hidden" name="selectedChips[]" value="" />
+          <input type="hidden" name="selectedChips[]" value="" />
+
+          <input type="hidden" name="connect_type" value="phone" />
+          <input type="hidden" name="room_count" value="" />
+          <input type="hidden" name="square_area" value="" />
+          <input type="hidden" name="for_what" value="" />
+          <input type="hidden" name="userPhone" value="" />
+          <input type="hidden" name="communicationType" value="form" />
+          <div class="form-wrapper">
+            <div class="form-block group1">
+              <div class="form-block__item">
+                <span class="form-block__num">1</span>
+                <div class="form-block__head">
+                  Оберіть зручний для вас варіант звʼязку*
+                </div>
+                <div class="form-block__variant" data-name="connect_type">
+                  <div class="variant-item selected" data-type="phone">
+                    <span class="variant-item__button">A</span
+                    ><span>Замовити дзвінок</span>
+                  </div>
+                  <div class="variant-item" data-type="viber">
+                    <span class="variant-item__button">B</span
+                    ><span>Viber</span>
+                  </div>
+                  <div class="variant-item" data-type="telegram">
+                    <span class="variant-item__button">B</span
+                    ><span>Telegram</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-block group2">
+              <div class="form-block__item">
+                <span class="form-block__num">2</span>
+                <div class="form-block__head">
+                  Скільки кімнат вас цікавить?*
+                </div>
+                <div class="form-block__variant" data-name="room_count">
+                  <div class="variant-item" data-type="1 кімната">
+                    <span class="variant-item__button">A</span
+                    ><span>1 кімната</span>
+                  </div>
+                  <div class="variant-item" data-type="2 кімнати">
+                    <span class="variant-item__button">B</span
+                    ><span>2 кімнати</span>
+                  </div>
+                  <div class="variant-item" data-type="3 кімнати">
+                    <span class="variant-item__button">B</span
+                    ><span>3 кімнати</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-block group3">
+              <div class="form-block__item">
+                <span class="form-block__num">3</span>
+                <div class="form-block__head">
+                  Яку площу квартири ви розглядаєте?*
+                </div>
+                <div class="form-block__variant" data-name="square_area">
+                  <div class="variant-item" data-type="До 50 м²">
+                    <span class="variant-item__button">A</span
+                    ><span>До 50 м²</span>
+                  </div>
+                  <div class="variant-item" data-type="50-80 м²">
+                    <span class="variant-item__button">B</span
+                    ><span>50-80 м²</span>
+                  </div>
+                  <div class="variant-item" data-type="Понад 80 м²">
+                    <span class="variant-item__button">B</span
+                    ><span>Понад 80 м²</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-block group4">
+              <div class="form-block__item">
+                <span class="form-block__num">4</span>
+                <div class="form-block__head">
+                  Для чого ви купуєте квартиру?*
+                </div>
+                <div class="form-block__variant" data-name="for_what">
+                  <div class="variant-item" data-type="Для Життя">
+                    <span class="variant-item__button">A</span
+                    ><span>Для Життя</span>
+                  </div>
+                  <div class="variant-item" data-type="Інвестиція">
+                    <span class="variant-item__button">B</span
+                    ><span>Інвестиція</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-block group5">
+              <div class="form-block__item">
+                <button class="country-dropdown-close">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 0 1 1.414 0L12 10.586l6.293-6.293a1 1 0 1 1 1.414 1.414L13.414 12l6.293 6.293a1 1 0 0 1-1.414 1.414L12 13.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L10.586 12 4.293 5.707a1 1 0 0 1 0-1.414Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+                <span class="form-block__num">5</span>
+                <div class="form-block__head">Ваші контакти:*</div>
+                <div class="form-block__fields">
+                  <label>
+                    <span>Ім'я*</span>
+                    <input type="text" name="userName" placeholder="І'мя" />
+                    <div class="error" for="name">
+                      <svg
+                        fill="#ed4c43"
+                        width="24px"
+                        height="24px"
+                        viewBox="-5.5 0 32 32"
+                      >
+                        <path
+                          d="M10.16 25.92c-2.6 0-8.72-0.24-9.88-2.24-1.28-2.28 2.040-8.24 3.080-10.040 1.040-1.76 4.64-7.56 7.12-7.56 2.8 0 7.24 7.48 8.56 10.12 1.92 3.84 2.48 6.4 1.56 7.6-1.52 2.040-8.96 2.12-10.44 2.12zM10.48 7.72c-0.72 0-3.080 2.36-5.64 6.76-2.76 4.68-3.48 7.72-3.080 8.4 0.32 0.56 3.2 1.4 8.4 1.4 5.44 0 8.64-0.88 9.080-1.48 0.28-0.36 0.040-2.28-1.72-5.84-2.64-5.28-6.12-9.24-7.040-9.24zM10.52 19.2c-0.48 0-0.84-0.36-0.84-0.84v-6.36c0-0.48 0.36-0.84 0.84-0.84s0.84 0.36 0.84 0.84v6.32c0 0.48-0.4 0.88-0.84 0.88zM11.36 21.36c0 0.464-0.376 0.84-0.84 0.84s-0.84-0.376-0.84-0.84c0-0.464 0.376-0.84 0.84-0.84s0.84 0.376 0.84 0.84z"
+                        ></path>
+                      </svg>
+                      <span>Введіть значення</span>
+                    </div>
+                  </label>
+                  <label>
+                    <span>Номер телефону*</span>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      value=""
+                      onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё]/, '');"
+                      autocomplete="off"
+                    />
+                    <div class="error" for="phone">
+                      <svg
+                        fill="#ed4c43"
+                        width="24px"
+                        height="24px"
+                        viewBox="-5.5 0 32 32"
+                      >
+                        <path
+                          d="M10.16 25.92c-2.6 0-8.72-0.24-9.88-2.24-1.28-2.28 2.040-8.24 3.080-10.040 1.040-1.76 4.64-7.56 7.12-7.56 2.8 0 7.24 7.48 8.56 10.12 1.92 3.84 2.48 6.4 1.56 7.6-1.52 2.040-8.96 2.12-10.44 2.12zM10.48 7.72c-0.72 0-3.080 2.36-5.64 6.76-2.76 4.68-3.48 7.72-3.080 8.4 0.32 0.56 3.2 1.4 8.4 1.4 5.44 0 8.64-0.88 9.080-1.48 0.28-0.36 0.040-2.28-1.72-5.84-2.64-5.28-6.12-9.24-7.040-9.24zM10.52 19.2c-0.48 0-0.84-0.36-0.84-0.84v-6.36c0-0.48 0.36-0.84 0.84-0.84s0.84 0.36 0.84 0.84v6.32c0 0.48-0.4 0.88-0.84 0.88zM11.36 21.36c0 0.464-0.376 0.84-0.84 0.84s-0.84-0.376-0.84-0.84c0-0.464 0.376-0.84 0.84-0.84s0.84 0.376 0.84 0.84z"
+                        ></path>
+                      </svg>
+                      <span>Введіть коректне значення</span>
+                    </div>
+                  </label>
+                  <label>
+                    <span>Адреса електронної пошти*</span>
+                    <input type="email" name="userEmail" placeholder="Email" />
+                    <div class="error" for="email">
+                      <svg
+                        fill="#ed4c43"
+                        width="24px"
+                        height="24px"
+                        viewBox="-5.5 0 32 32"
+                      >
+                        <path
+                          d="M10.16 25.92c-2.6 0-8.72-0.24-9.88-2.24-1.28-2.28 2.040-8.24 3.080-10.040 1.040-1.76 4.64-7.56 7.12-7.56 2.8 0 7.24 7.48 8.56 10.12 1.92 3.84 2.48 6.4 1.56 7.6-1.52 2.040-8.96 2.12-10.44 2.12zM10.48 7.72c-0.72 0-3.080 2.36-5.64 6.76-2.76 4.68-3.48 7.72-3.080 8.4 0.32 0.56 3.2 1.4 8.4 1.4 5.44 0 8.64-0.88 9.080-1.48 0.28-0.36 0.040-2.28-1.72-5.84-2.64-5.28-6.12-9.24-7.040-9.24zM10.52 19.2c-0.48 0-0.84-0.36-0.84-0.84v-6.36c0-0.48 0.36-0.84 0.84-0.84s0.84 0.36 0.84 0.84v6.32c0 0.48-0.4 0.88-0.84 0.88zM11.36 21.36c0 0.464-0.376 0.84-0.84 0.84s-0.84-0.376-0.84-0.84c0-0.464 0.376-0.84 0.84-0.84s0.84 0.376 0.84 0.84z"
+                        ></path>
+                      </svg>
+                      <span>Введіть коректне значення</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-block group6">
+              <div class="form-block__item">
+                <span class="form-block__num">6</span>
+                <div class="form-block__head">Дякую!</div>
+                <div class="form-block__fields">
+                  <div>
+                    Ваша заява була успішно відправлена, незабаром наш менеджер
+                    зв'яжеться з вами
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="error">
+            <svg
+              fill="#ed4c43"
+              width="24px"
+              height="24px"
+              viewBox="-5.5 0 32 32"
+            >
+              <path
+                d="M10.16 25.92c-2.6 0-8.72-0.24-9.88-2.24-1.28-2.28 2.040-8.24 3.080-10.040 1.040-1.76 4.64-7.56 7.12-7.56 2.8 0 7.24 7.48 8.56 10.12 1.92 3.84 2.48 6.4 1.56 7.6-1.52 2.040-8.96 2.12-10.44 2.12zM10.48 7.72c-0.72 0-3.080 2.36-5.64 6.76-2.76 4.68-3.48 7.72-3.080 8.4 0.32 0.56 3.2 1.4 8.4 1.4 5.44 0 8.64-0.88 9.080-1.48 0.28-0.36 0.040-2.28-1.72-5.84-2.64-5.28-6.12-9.24-7.040-9.24zM10.52 19.2c-0.48 0-0.84-0.36-0.84-0.84v-6.36c0-0.48 0.36-0.84 0.84-0.84s0.84 0.36 0.84 0.84v6.32c0 0.48-0.4 0.88-0.84 0.88zM11.36 21.36c0 0.464-0.376 0.84-0.84 0.84s-0.84-0.376-0.84-0.84c0-0.464 0.376-0.84 0.84-0.84s0.84 0.376 0.84 0.84z"
+              ></path>
+            </svg>
+            <span>Будь ласка, зробіть свій вибір</span>
+          </div>
+          <div class="action-buttons">
+            <button type="button" class="prev-button">
+              <svg
+                fill="#ffffff"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="24"
+                  height="24"
+                  transform="rotate(90 12 12)"
+                  opacity="0"
+                />
+                <path
+                  d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64z"
+                />
+              </svg>
+            </button>
+            <button type="button" class="next-button">OK</button>
+            <input
+              type="submit"
+              value="Відправити"
+              class="next-button-submit"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
