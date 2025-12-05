@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.prev-button').style.display = 'block'
     groupId = nextGroup
 
-    if (groupId === 5) {
+    if (groupId === 3) {
       document.querySelector('.next-button').style.display = 'none'
       document.querySelector('.next-button-submit').style.display = 'block'
     }
-    if (groupId === 6) {
+    if (groupId === 4) {
       document.querySelector('.next-button').style.display = 'block'
       document.querySelector('.next-button').classList.add('close-form')
       document.querySelector('.next-button-submit').style.display = 'none'
@@ -187,9 +187,10 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch('https://hook.eu2.make.com/qnqgds1aqpjo3zlp82q82hohcmkuqv38', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
+            'x-make-apikey': 'masked-api-key-value',
+            'Access-Control-Allow-Origin': '*',
           },
-          body: JSON.stringify(data),
+          body: new URLSearchParams(data),
         })
           .then((res) => console.log(res))
           .finally(() => goNext())
