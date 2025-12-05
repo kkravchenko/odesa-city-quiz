@@ -345,6 +345,7 @@
 @media (max-width: 480px) {
   .float-form {
     width: 100%;
+    transform: translateX(calc(100% - 56px));
     &-form {
       width: calc(100% - 80px);
     }
