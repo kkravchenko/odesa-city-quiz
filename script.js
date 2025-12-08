@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.next-button').style.display = 'block'
       document.querySelector('.next-button').classList.add('close-form')
       document.querySelector('.next-button-submit').style.display = 'none'
+      document.querySelector('.prev-button').style.display = 'none'
     }
   }
 
