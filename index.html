@@ -3,7 +3,7 @@
     <title>Odessa City</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/kkravchenko/odesa-city-quiz/style.css"
+      href="https://cdn.jsdelivr.net/gh/kkravchenko/odesa-city-quiz@6c817a9/style.css"
     />
     <link
       rel="stylesheet"
@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.5/build/js/intlTelInput.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/gh/kkravchenko/odesa-city-quiz@91286e3/script.js"
+      src="https://cdn.jsdelivr.net/gh/kkravchenko/odesa-city-quiz@6c817a9/script.js"
       defer
     ></script>
   </head>
@@ -66,11 +66,21 @@
           <input type="hidden" name="userPhone" value="" />
           <input type="hidden" name="communicationType" value="form" />
 
-          <input type="hidden" class="utm_source" name="utm_source" value="">
-          <input type="hidden" class="utm_medium" name="utm_medium" value="">
-          <input type="hidden" class="utm_campaign" name="utm_campaign" value="">
-          <input type="hidden" class="utm_content" name="utm_content" value="">
-          <input type="hidden" class="utm_term" name="utm_term" value=""></div>
+          <input type="hidden" class="utm_source" name="utm_source" value="" />
+          <input type="hidden" class="utm_medium" name="utm_medium" value="" />
+          <input
+            type="hidden"
+            class="utm_campaign"
+            name="utm_campaign"
+            value=""
+          />
+          <input
+            type="hidden"
+            class="utm_content"
+            name="utm_content"
+            value=""
+          />
+          <input type="hidden" class="utm_term" name="utm_term" value="" />
           <div class="form-wrapper">
             <div class="form-block group1">
               <div class="form-block__item">
@@ -79,7 +89,10 @@
                   Оберіть зручний для вас варіант звʼязку*
                 </div>
                 <div class="form-block__variant" data-name="connect_type">
-                  <div class="variant-item selected" data-type="Замовити дзвінок">
+                  <div
+                    class="variant-item selected"
+                    data-type="Замовити дзвінок"
+                  >
                     <span class="variant-item__button">A</span
                     ><span>Замовити дзвінок</span>
                   </div>
