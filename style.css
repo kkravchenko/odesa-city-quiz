@@ -3,10 +3,10 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 451px;
-  height: 100%;
+  width: 380px;
+  height: 100vh;
   transform: translateX(380px);
-  z-index: 100;
+  z-index: 2147483648;
 }
 .float-form.active {
   transform: translateX(0);
@@ -221,14 +221,12 @@
   cursor: pointer;
 }
 .float-form-form .form-block__num {
-  padding: 7px 0;
+  padding: 3px 0;
   background: #e94c43;
   border-radius: 4px;
   color: #fff;
-  display: block;
-  font-size: 12px;
+  width: 14px;
   text-align: center;
-  width: 16px;
 }
 .float-form-form .form-block__head {
   font-size: 27px;
@@ -238,11 +236,13 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  font-weight: 400;
 }
 .float-form-form .form-block__fields label {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  font-size: 14px;
 }
 .float-form-form .form-block__fields label input {
   border: none;
