@@ -187,12 +187,20 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch('https://hook.eu2.make.com/qnqgds1aqpjo3zlp82q82hohcmkuqv38', {
           method: 'POST',
           headers: {
-            'x-make-apikey': 'masked-api-key-value',
+            'x-make-apikey':
+              'G7kP9mX2vR4tY8nL5qW3zA6cB1dF0hJ3mN7pQ9rT2uV5xY8aC4eG6iK1oS3wU7yZ',
             'Access-Control-Allow-Origin': '*',
           },
           body: new URLSearchParams(data),
         })
-          .then((res) => console.log(res))
+          .then((res) => {
+            if (res.ok) {
+              console.log('Лид успешно отправлен на Make.com')
+            } else {
+              console.log('Ошибка:', res.status, res.statusText)
+            }
+          })
+          .catch((err) => console.error('Ошибка сети:', err))
           .finally(() => goNext())
       }
     })

@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.5/build/js/intlTelInput.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/gh/kkravchenko/odesa-city-quiz/script.js"
+      src="https://cdn.jsdelivr.net/gh/kkravchenko/odesa-city-quiz@91286e3/script.js"
       defer
     ></script>
   </head>
@@ -53,7 +53,7 @@
               />
             </a>
           </div>
-          <input type="hidden" name="type" value="lead" />
+          <input type="hidden" name="type" value="form" />
           <input type="hidden" name="projectId" value="" />
           <input type="hidden" name="projectNameUk" value="" />
           <input type="hidden" name="projectAddressUk" value="" />
@@ -61,12 +61,16 @@
           <input type="hidden" name="selectedChips[]" value="" />
           <input type="hidden" name="selectedChips[]" value="" />
 
-          <input type="hidden" name="connect_type" value="phone" />
+          <input type="hidden" name="connect_type" value="Замовити дзвінок" />
           <input type="hidden" name="room_count" value="" />
-          <input type="hidden" name="square_area" value="" />
-          <input type="hidden" name="for_what" value="" />
           <input type="hidden" name="userPhone" value="" />
           <input type="hidden" name="communicationType" value="form" />
+
+          <input type="hidden" class="utm_source" name="utm_source" value="">
+          <input type="hidden" class="utm_medium" name="utm_medium" value="">
+          <input type="hidden" class="utm_campaign" name="utm_campaign" value="">
+          <input type="hidden" class="utm_content" name="utm_content" value="">
+          <input type="hidden" class="utm_term" name="utm_term" value=""></div>
           <div class="form-wrapper">
             <div class="form-block group1">
               <div class="form-block__item">
@@ -75,19 +79,19 @@
                   Оберіть зручний для вас варіант звʼязку*
                 </div>
                 <div class="form-block__variant" data-name="connect_type">
-                  <div class="variant-item selected" data-type="phone">
+                  <div class="variant-item selected" data-type="Замовити дзвінок">
                     <span class="variant-item__button">A</span
                     ><span>Замовити дзвінок</span>
                   </div>
-                  <div class="variant-item" data-type="viber">
+                  <div class="variant-item" data-type="Viber">
                     <span class="variant-item__button">B</span
                     ><span>Viber</span>
                   </div>
-                  <div class="variant-item" data-type="telegram">
+                  <div class="variant-item" data-type="Telegram">
                     <span class="variant-item__button">C</span
                     ><span>Telegram</span>
                   </div>
-                  <div class="variant-item" data-type="whatsapp">
+                  <div class="variant-item" data-type="Whatsapp">
                     <span class="variant-item__button">D</span
                     ><span>Whatsapp</span>
                   </div>
