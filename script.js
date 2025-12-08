@@ -127,7 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   document.querySelector('.prev-button').addEventListener('click', () => {
-    document.querySelector('.error').style.display = 'none'
+    document.querySelectorAll('.error').forEach(function (element) {
+      element.style.display = 'none'
+    })
 
     document.querySelector('.form-wrapper').classList.remove('group' + groupId)
 
@@ -138,7 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
     groupId = prevGroup
 
     if (groupId === 1) {
-      document.querySelector('.error').style.display = 'none'
+      document.querySelectorAll('.error').forEach(function (element) {
+        element.style.display = 'none'
+      })
     }
     document.querySelector('.next-button').style.display = 'block'
     document.querySelector('.next-button-submit').style.display = 'none'

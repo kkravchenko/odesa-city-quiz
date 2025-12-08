@@ -238,11 +238,19 @@
   row-gap: 20px;
   font-weight: 400;
 }
+.float-form-form .form-block__fields > div {
+  font-size: 14px;
+  line-height: 18px;
+}
 .float-form-form .form-block__fields label {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   font-size: 14px;
+}
+.float-form-form .form-block__fields label span {
+  font-size: 14px;
+  font-weight: 300;
 }
 .float-form-form .form-block__fields label input {
   border: none;
