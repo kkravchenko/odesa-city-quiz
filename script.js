@@ -162,14 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('[for="phone"]').style.display = 'flex'
         error = true
       }
-      if (
-        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(
-          document.querySelector('[name="userEmail"]').value
-        )
-      ) {
-        document.querySelector('[for="email"]').style.display = 'flex'
-        error = true
-      }
 
       if (!error) {
         var form = document.querySelector('.tech-form')
