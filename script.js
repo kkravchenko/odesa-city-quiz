@@ -193,10 +193,17 @@ document.addEventListener('DOMContentLoaded', () => {
           .then((res) => {
             if (res.ok) {
               console.log('Лид успешно отправлен на Make.com')
+
+              const startTime = Number(
+                sessionStorage.getItem('session_start_time')
+              )
+              const timeToSubmit = Math.round((Date.now() - startTime) / 1000)
+
               window.dataLayer = window.dataLayer || []
               window.dataLayer.push({
                 event: 'kviz_form_success',
                 form_type: 'kviz',
+                time_to_submit: timeToSubmit,
               })
             } else {
               console.log('Ошибка:', res.status, res.statusText)
