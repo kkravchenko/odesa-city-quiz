@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
               console.log('Лид успешно отправлен на Make.com')
               window.dataLayer = window.dataLayer || []
               window.dataLayer.push({
-                event: 'form_success',
+                event: 'kviz_form_success',
                 form_type: 'kviz',
               })
             } else {
