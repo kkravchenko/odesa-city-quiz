@@ -201,6 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
           .then((res) => {
             if (res.ok) {
               console.log('Лид успешно отправлен на Make.com')
+              window.dataLayer = window.dataLayer || []
+              window.dataLayer.push({
+                event: 'form_success',
+                form_type: 'kviz',
+              })
             } else {
               console.log('Ошибка:', res.status, res.statusText)
             }
