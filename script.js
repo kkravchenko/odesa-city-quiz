@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+  if (!sessionStorage.getItem('session_start_time')) {
+    sessionStorage.setItem('session_start_time', Date.now().toString())
+  }
+
   var input = document.querySelector('#phone')
   var iti = window.intlTelInput(input, {
     initialCountry: 'auto',
