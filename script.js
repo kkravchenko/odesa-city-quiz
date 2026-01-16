@@ -203,11 +203,16 @@ document.addEventListener('DOMContentLoaded', () => {
               )
               const timeToSubmit = Math.round((Date.now() - startTime) / 1000)
 
+              let eventCount = Number(
+                sessionStorage.getItem('events_before_submit') || 0
+              )
+
               window.dataLayer = window.dataLayer || []
               window.dataLayer.push({
                 event: 'kviz_form_success',
                 form_type: 'kviz',
                 time_to_submit: timeToSubmit,
+                events_before_submit: eventCount,
               })
             } else {
               console.log('Ошибка:', res.status, res.statusText)
