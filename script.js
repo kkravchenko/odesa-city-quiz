@@ -18,9 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoPlaceholder: 'aggressive',
     strictMode: true,
     loadUtils: () =>
-      import(
-        'https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.5/build/js/utils.js'
-      ),
+      import('https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.5/build/js/utils.js'),
   })
 
   setInterval(() => {
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'open:countrydropdown',
     () =>
       (document.querySelector('.country-dropdown-close').style.display =
-        'block')
+        'block'),
   )
 
   document
@@ -69,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.float-form-form > .error').style.display = 'none'
       if (!element.classList.contains('selected')) {
         var selected = document.querySelector(
-          '.form-block.group' + groupId + ' .variant-item.selected'
+          '.form-block.group' + groupId + ' .variant-item.selected',
         )
         if (selected) {
           selected.classList.remove('selected')
@@ -82,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.error').style.display = 'none'
       }
       if (groupId > 1) setTimeout(() => goNext(), 300)
-    })
+    }),
   )
 
   document.querySelector('#phone').addEventListener('blur', () => {
@@ -91,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function goNext() {
     var item = document.querySelector(
-      '.form-block.group' + groupId + ' .form-block__variant'
+      '.form-block.group' + groupId + ' .form-block__variant',
     )
 
     if (item) {
@@ -199,13 +197,16 @@ document.addEventListener('DOMContentLoaded', () => {
               console.log('Лид успешно отправлен на Make.com')
 
               const startTime = Number(
-                sessionStorage.getItem('session_start_time')
+                sessionStorage.getItem('session_start_time'),
               )
               const timeToSubmit = Math.round((Date.now() - startTime) / 1000)
 
               let eventCount = Number(
-                sessionStorage.getItem('events_before_submit') || 0
+                sessionStorage.getItem('events_before_submit') || 0,
               )
+
+              let pagesBeforeSubmit =
+                sessionStorage.getItem('pages_before_submit') || []
 
               window.dataLayer = window.dataLayer || []
               window.dataLayer.push({
@@ -213,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 form_type: 'kviz',
                 time_to_submit: timeToSubmit,
                 events_before_submit: eventCount,
+                page_before_submit: pagesBeforeSubmit.length(),
               })
             } else {
               console.log('Ошибка:', res.status, res.statusText)
